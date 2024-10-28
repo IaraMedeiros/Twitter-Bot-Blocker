@@ -15,6 +15,12 @@ driver.set_window_size(1024, 600)
 driver.maximize_window()
 wait = WebDriverWait(driver, 15)
 
+#VARIAVEIS AQUI
+username = "yout_username"
+email = "your_email"
+password = "your_password"
+tweet_link = "link to the tweet you want to block bots"
+
 # Função para localizar e clicar em um elemento
 def locate_and_click(xpath, wait_time):
     try:
@@ -47,16 +53,16 @@ def element_exists(xpath):
 
 # LOGIN
 try:
-    time.sleep(15)
+    time.sleep(1)
     locate_and_click("//input", 2)
-    insert_data("//input", "throwaway58680@gmail.com")  # Seu e-mail aqui
+    insert_data("//input", email)  # Seu e-mail aqui
     
     if element_exists("//span[contains(text(), 'Digite seu número de celular ou nome de usuário')]"):
         locate_and_click("//input", 2)
-        insert_data("//input", "throwaway58680") # Seu usuário aqui
+        insert_data("//input", username) # Seu usuário aqui
 
     locate_and_click("(//input)[2]", 2)
-    insert_data("(//input)[2]", "ThrowAway123") # Sua senha aqui
+    insert_data("(//input)[2]", password) # Sua senha aqui
 
     time.sleep(3)
 
@@ -94,7 +100,7 @@ def block_verified_accounts(tweet_aria, original_tweet_aria, verified_account):
 
 # BLOQUEAR CONTAS VERIFICADAS
 try:
-    driver.get("https://x.com/blognaointendo/status/1845943917604118535") # Link do tweet a ser bloqueado aqui
+    driver.get(tweet_link) # Link do tweet a ser bloqueado aqui
     wait.until(EC.presence_of_element_located((By.XPATH, "//div[@data-testid='tweetText']")))
     driver.execute_script("window.scrollBy(0, 500);")
 
