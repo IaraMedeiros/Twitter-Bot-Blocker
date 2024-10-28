@@ -15,9 +15,7 @@ To install and run the project, follow these steps:
 
 ## **How to Use**
 1. Open the project directory in your IDE
-2. Modify the project variables (more details in the "Usage" section)
-3. Run the project with **`python block-bot.py`**
-4. Edit the code in the variables section (line 18) and add your details:
+2. Edit the code in the variables section (line 18) and add your details:
 
    ```python
    # VARIABLES HERE
@@ -25,6 +23,8 @@ To install and run the project, follow these steps:
    email = "your_email"
    password = "your_password"
    tweet_link = "link to the tweet you want to block bots"
+3. Run the project with **`python block-bot.py`**
+
 
 # Twitter-Bot-Blocker
 ## **Introdução**
@@ -42,9 +42,7 @@ Para instalar e fazer o projeto rodar, siga os seguintes passso:
 
 ## **Como usar**
 1. Abra o diretório do projeto em sua IDE
-2. Altere as variáveis do projeto (mais detalhes na sessão "uso")
-3. Rode o projeto **`python block-bot.py`**
-4. Edite o código na parte de variáveis (linha 18) e edite seus dados:
+2. Edite o código na parte de variáveis (linha 18) e edite seus dados:
 
    ```python
    # VARIAVEIS AQUI
@@ -52,5 +50,7 @@ Para instalar e fazer o projeto rodar, siga os seguintes passso:
    email = "your_email"
    password = "your_password"
    tweet_link = "link to the tweet you want to block bots"
+
+3. Rode o projeto **`python block-bot.py`**
 
 
